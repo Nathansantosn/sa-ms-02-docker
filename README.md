@@ -1,36 +1,32 @@
 
-# G88419-sa-ms-02-docker
+# Guia Completo Docker - sa-ms-02-docker
 
-## Pré-instalação
+## 1. Pré-requisitos
 
-### Instalação do Docker
+## Configuração do Ambiente Docker
+- [Instale o Docker](https://docs.docker.com/get-docker/) seguindo a documentação oficial
+- Alternativa online: [Docker Playground](https://labs.play-with-docker.com/)
 
-Se você ainda não tem o Docker instalado, siga as instruções na [página oficial do Docker](https://docs.docker.com/get-docker/) para a instalação na sua plataforma.
+## 2. Configuração do Projeto
 
-Alternativamente, você pode usar o [Labs Play Docker](https://labs.play-with-docker.com/) para rodar containers Docker no navegador, sem precisar de instalação local.
-
-## Baixando o Repositório
-
-### Clonando o Repositório
-
-Clone o repositório do GitHub para o seu ambiente local:
-
+## Clonar o Repositório
 ```bash
 git clone https://github.com/CaiquevFreitas/sa-ms-02-docker.git
+cd sa-ms-02-docker
 ```
 
-### Construindo a Imagem Docker
+## Construir a Imagem Docker
 
-Após clonar o repositório, navegue até a pasta do projeto e construa a imagem Docker:
+Acesse a pasta do projeto e gere a imagem Docker executando:
 
 ```bash
 cd sa-ms-02-docker
-docker build -t nome-da-imagem .
+docker build -t minha-aplicacao .
 ```
 
 Substitua `"nome-da-imagem"` por um nome apropriado para a sua imagem Docker.
 
-### Rodando o Container
+## Rodando o Container
 
 Agora, você pode executar o container, mapeando a porta 80 do container para a porta 8080 da sua máquina local:
 
